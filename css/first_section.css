@@ -1,0 +1,101 @@
+.section1{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background-image: var(--main-gradient), url(../image/20170420-IMG_2639.jpg);
+    background-size: cover;
+    color: white;
+}
+.topHeader{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 20px;
+    font-size: 30px;
+}
+nav{
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+nav a{
+    font-size: 15px;
+    
+    color: white;
+    border-bottom: 3px solid transparent;
+    padding-top: 12px;
+    padding-bottom: 12px;
+
+}
+nav a:hover{
+    color: yellow;
+    border-bottom: 3px solid yellow;
+}
+nav img{
+    height: 15px;
+    padding-bottom: 3px;
+    cursor: pointer;
+}
+
+.middle_section1{
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px
+}
+.middle_section1 h2{
+    font-size: 50px;
+}
+.middle_section1 h1{
+    text-align: center;
+    font-size: 110px;
+}
+.middle_section1 div{
+    height: 4px;
+    width: 5%;
+    background-color: white;
+}
+.middle_section1 a{
+    color: white;
+    text-decoration: none;
+    border: 4px solid white;
+    font-size: 15px;
+    padding: 10px 20px;
+    transition: 500ms;
+}
+.middle_section1 a:hover{
+    color: black;
+    background-color: white; 
+}
+
+.bottom_section1{
+    display: flex;
+    justify-content: center;
+    gap: 15px; 
+}
+.bottom_section1 a{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    position: relative;
+    width: 15%;
+    padding: 20px 0px;
+    border-top: 3px solid white;
+}
+.bottom_section1 a::before{
+    content: "";
+    position: absolute;
+    top: -3px;
+    left: 0;
+    width: 0px;
+    height: 3px;
+    background-color: rgb(228, 129, 116);
+    transition: 500ms;
+}
+.bottom_section1 a:hover::before{
+    width: 100%;
+}
+.bottom_section1 b{
+    font-size: 25px;
+}
