@@ -1,0 +1,70 @@
+body{
+    overflow: hidden;
+    margin-right: 15px;
+    animation: srcoll-bar_appears 0s 6s linear forwards;
+}
+.load_screen{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-image: linear-gradient(180deg,rgb(231, 128, 135) 0%, rgb(238, 217, 138) 100%);
+    z-index: 2;
+    opacity: 1;
+    animation: disapear 2s 4s linear forwards;
+}
+.load_screen span{
+    color: white;
+    font-family: "Montserrat";
+    font-size: 150px;
+    font-weight: 800;
+    line-height: 150px;
+    transform: rotateY(90deg);
+    animation: rotation 1s 500ms linear forwards;
+}
+.load_screen span:nth-child(2){
+    animation: rotation 1s 1s linear forwards;
+}
+.load_screen span:nth-child(3){
+    animation: rotation 1s 1500ms linear forwards;
+}
+.load_screen span:nth-child(4){
+    animation: rotation 1s 2s linear forwards;
+}
+@media (max-width: 500px) {
+    .load_screen{
+        flex-direction: column;
+    }
+}
+
+@keyframes rotation{
+    33.3%{
+        transform: rotateY(180deg);
+    }
+    66.6%{
+        transform: rotateY(270deg);
+    }
+    100%{
+        transform: rotateY(360deg);
+    }
+}
+
+@keyframes srcoll-bar_appears{
+    100%{
+        overflow: auto;
+        margin-right: 0px;
+    }
+}
+@keyframes disapear{
+    99%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 0;
+        display: none;
+    }
+}
