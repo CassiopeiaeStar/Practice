@@ -16,7 +16,7 @@
 .service_section_block{
     display: flex;
     gap: 30px;
-    max-width: 1333px;
+    max-width: var(--main-width);
     height: 40%;
     margin: 90px 0;
 }
@@ -131,7 +131,7 @@
 @media (max-width: 1370px){
     .service_section_block{
         flex-direction: column;
-        width: 800px;   
+        width: var(--small-width);   
         height: auto;     
         flex-grow: 1;
     }

@@ -14,7 +14,7 @@
     display: flex;
     flex-wrap: wrap;
     align-content: space-around;
-    width: 1333px;
+    width: var(--main-width);
 }
 .work_section_block article{
     display: grid;
@@ -48,7 +48,7 @@
         height: 872px;
     }
     .work_section_block{
-        width: 800px;
+        width: var(--small-width);
         justify-content: center;
     }
     .work_section_block div{

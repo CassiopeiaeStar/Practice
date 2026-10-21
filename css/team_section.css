@@ -16,7 +16,7 @@
 .team_section_block{
     display: flex;
     gap: 30px;
-    width: 1300px;
+    width: var(--main-width);
     flex-grow: 1;
     margin: 90px 0;
 }
@@ -127,7 +127,7 @@
         height: 1884px;
     }
     .team_section_block{
-        width: 800px;
+        width: var(--small-width);
         flex-wrap: wrap;
         justify-content: center;
     }
