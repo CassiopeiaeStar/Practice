@@ -116,6 +116,15 @@
     justify-content: space-evenly;
     align-items: center;
     background-color: rgb(248, 248, 248);
+
+    svg{
+        display: none;
+        color: var(--gray-color);
+        width: 25px;
+        height: 25px;
+        margin: 10px;
+        flex-shrink: 0;
+    }
 }
 .team_section_footer img{
     height: 60%;
@@ -152,5 +161,15 @@
         width: 100%;
         max-width: 385px;
         flex-grow: 1;
+    }
+    .team_section_footer{
+        justify-content: center;
+        gap: 10px;
+    }
+    .team_section_footer img:nth-child(n+3){
+        display: none;
+    }
+    .team_section_footer svg{
+        display: block;
     }
 }
