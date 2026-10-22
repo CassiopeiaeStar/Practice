@@ -63,8 +63,9 @@ body{
     99%{
         opacity: 0;
     }
-    100%{
+    100%{    
         opacity: 0;
         display: none;
+        visibility: hidden;
     }
 }
