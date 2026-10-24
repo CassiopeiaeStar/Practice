@@ -60,6 +60,12 @@ p{
     margin: 0 10px;
 }
 
+@keyframes footer_position_change {
+    100%{
+        transform: translateX(calc(-100% * var(--tag-count)));
+    }
+}
+
 @font-face {
     font-family: "Kaushan Script";
     src: url(./fonts/KaushanScript-Regular.woff2) format('woff2');
