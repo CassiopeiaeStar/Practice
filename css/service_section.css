@@ -50,7 +50,7 @@
         overflow: auto;
     }
 
-    label:last-child {
+    .tlabel:last-child {
         margin-bottom: 0;
     }
 }
@@ -211,10 +211,6 @@
 
     .service_section p {
         margin: 0 10px;
-    }
-
-    .block_right .tlabel {
-        margin-bottom: 0;
     }
 
     .service_section_footer {
