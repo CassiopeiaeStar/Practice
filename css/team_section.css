@@ -198,6 +198,8 @@
             --tag-count: 5;
             animation: footer_position_change 15s infinite alternate cubic-bezier(0.43, 0.04, 0.65, 1.03);
             width: 140px;
+            box-sizing: border-box;
+            padding: 10px;
         }
 
         svg {

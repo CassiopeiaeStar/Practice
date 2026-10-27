@@ -5,6 +5,10 @@
     --main-width: 1333px;
     --small-width: 800px;
 }
+html::selection {
+    color: rgb(230 139 146);
+    background-color: rgba(235, 215, 148, 0.767);
+}
 html{
     scroll-behavior: smooth;
 }
