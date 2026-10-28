@@ -81,7 +81,6 @@
         grid-template-columns: 1fr 35px;
 
         img {
-            grid-row: 1;
             grid-column: 2;
         }
 
