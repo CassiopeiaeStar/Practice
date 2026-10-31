@@ -135,6 +135,7 @@
         width: 25px;
         height: 25px;
         color: var(--gray-color);
+        flex-shrink: 0;
     }
 
     .footer_img {

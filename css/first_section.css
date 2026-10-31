@@ -85,11 +85,9 @@
 
     img {
         height: 15px;
-        padding-bottom: 3px;
-        cursor: pointer;
     }
 
-    a:hover {
+    .hover-a:hover {
         color: yellow;
         border-bottom: 3px solid yellow;
     }
@@ -114,7 +112,7 @@
 
     div {
         height: 4px;
-        width: 5%;
+        width: 95px;
         background-color: white;
     }
 
@@ -198,11 +196,6 @@
 
         h1 {
             font-size: 55px;
-        }
-
-        div {
-            width: 15%;
-            background-color: white;
         }
     }
 }
