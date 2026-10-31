@@ -27,41 +27,42 @@
     flex-direction: column;
     width: calc(100% / 3);
     align-items: center;
-}
 
-.team_section_blockCon b {
-    font-size: 15px;
-    margin-top: 10px;
-    margin-bottom: 5px;
-}
+    h2 {
+        font-family: "Montserrat";
+        font-size: 15px;
+        margin-top: 10px;
+        margin-bottom: 5px;
+    }
 
-.team_section_blockCon p {
-    margin: 0;
-    font-style: italic;
-    font-size: 13px;
-}
+    p {
+        margin: 0;
+        font-style: italic;
+        font-size: 13px;
+    }
 
-.team_section_blockCon .image {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: calc(100% - 20px);
-    margin: 10px;
-    background-size: cover;
-    flex-grow: 1;
-    box-shadow: 0px 0px 0px var(--green-color);
-    transition: 200ms;
-    position: relative;
-}
+    .image {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: calc(100% - 20px);
+        margin: 10px;
+        background-size: cover;
+        flex-grow: 1;
+        box-shadow: 0px 0px 0px var(--green-color);
+        transition: 200ms;
+        position: relative;
+    }
 
-.team_section_blockCon .image::before {
-    content: "";
-    background-image: var(--main-gradient);
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    opacity: 0;
-    transition: 200ms;
+    .image::before {
+        content: "";
+        background-image: var(--main-gradient);
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        opacity: 0;
+        transition: 200ms;
+    }
 }
 
 .team_section_blockCon:nth-child(1) .image {
