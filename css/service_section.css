@@ -48,6 +48,21 @@
         height: 100%;
         font-style: italic;
         overflow: auto;
+        padding-right: 20px;
+    }
+
+    .tlabel div::-webkit-scrollbar {
+        width: 8px;
+    }
+
+    .tlabel div::-webkit-scrollbar-track {
+        background-color: rgb(196, 196, 196);
+        border-radius: 4px;
+    }
+
+    .tlabel div::-webkit-scrollbar-thumb {
+        background-color: var(--green-color);
+        border-radius: 4px;
     }
 
     .tlabel:last-child {
@@ -72,10 +87,12 @@
     height: 25px;
     margin-left: auto;
     color: var(--gray-color);
-    .up{
+
+    .up {
         display: none;
     }
-    .down{
+
+    .down {
         display: block;
     }
 }
@@ -96,10 +113,11 @@
 #text1:checked+.content_head svg,
 #text2:checked+.content_head svg,
 #text3:checked+.content_head svg {
-    .up{
+    .up {
         display: block;
     }
-    .down{
+
+    .down {
         display: none;
     }
 }

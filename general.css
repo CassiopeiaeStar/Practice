@@ -1,54 +1,62 @@
-:root{
-    --main-gradient: linear-gradient(180deg,rgba(231, 128, 135, 0.9) 0%, rgba(238, 217, 138, 0.9) 100%);
+:root {
+    --main-gradient: linear-gradient(180deg, rgba(231, 128, 135, 0.9) 0%, rgba(238, 217, 138, 0.9) 100%);
     --gray-color: rgb(185, 185, 185);
     --green-color: rgb(149 226 212);
     --main-width: 1333px;
     --small-width: 800px;
 }
+
 ::selection {
     color: rgb(230 139 146);
     background-color: rgba(235, 215, 148, 0.767);
 }
-html{
+
+html {
     scroll-behavior: smooth;
 }
-body{
+
+body {
     margin: 0;
 }
-footer{
+
+footer {
     height: 292px;
     box-sizing: border-box;
 }
 
-.separator{
+.separator {
     height: 4px;
     width: 5%;
     background-color: rgb(216, 141, 142);
     margin: 30px;
 }
 
-a{
+a {
     text-decoration: none;
     font-family: "Montserrat", cursive;
 }
-h1{
+
+h1 {
     margin: 0;
     font-family: "Montserrat", cursive;
     text-align: center;
 }
-h2{
+
+h2 {
     margin: 0;
     font-family: "Kaushan Script", cursive;
 }
-b{
+
+b {
     font-family: "Montserrat", cursive;
 }
-p{
+
+p {
     font-family: "Montserrat", cursive;
     margin: 0;
 }
 
-.our_work_section{
+.our_work_section {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -56,7 +64,8 @@ p{
     gap: 10px;
     height: 40vh;
 }
-.our_work_section p{
+
+.our_work_section p {
     max-width: 1000px;
     font-weight: 500;
     text-align: center;
@@ -64,8 +73,38 @@ p{
     margin: 0 10px;
 }
 
+.scroll_btn {
+    display: none;
+    width: 40px;
+    height: 40px;
+    position: fixed;
+    color: rgb(253, 227, 140);
+    background-color:  rgb(246, 127, 131);
+    text-align: center;
+    align-content: center;
+}
+
+.scroll_btn svg {
+    height: 80%;
+    width: 80%;
+}
+.scroll_btn:active {
+    color: rgb(246, 127, 131);
+    background-color: rgb(253, 227, 140);
+}
+
+.btn_down {
+    right: 20px;
+    bottom: 20px;
+}
+
+.btn_up {
+    right: 20px;
+    bottom: 60px;
+}
+
 @keyframes footer_position_change {
-    100%{
+    100% {
         transform: translateX(calc(-100% * var(--tag-count)));
     }
 }
@@ -76,9 +115,22 @@ p{
     font-weight: 400;
     font-style: italic;
 }
+
 @font-face {
     font-family: "Montserrat";
     src: url(./fonts/Montserrat-VariableFont_wght.woff2) format('woff2');
     font-weight: 100 900;
     font-style: normal;
+}
+
+@media (hover: hover) {
+    .scroll_btn:hover {
+        color: rgb(246, 127, 131);
+        background-color: rgb(253, 227, 140);
+    }
+}
+@media (max-width: 650px) {
+    .scroll_btn{
+        display: block;
+    }
 }
