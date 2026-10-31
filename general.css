@@ -82,6 +82,7 @@ p {
     background-color:  rgb(246, 127, 131);
     text-align: center;
     align-content: center;
+    z-index: 2;
 }
 
 .scroll_btn svg {
